@@ -214,8 +214,17 @@ function generateContent() {
             "Happy Valentine’s Day To My Amazing Parents. You make love look so easy. I’m glad to be the daughter of two people who’ve always been so in love", 
             " Happy Valentine’s Day, My Dear Son! There never was a more delightful son! I love you so much and am thinking of you always!",   
             "Happy Valentine’s Day To My Son. Sending you all my love and plenty of hugs! You really are the sweetest son a mother could ask for!",   
-            "Ut labore et dolore magna aliqua",  
-            "Duis aute irure dolor in reprehenderit"
+            "You guys make my life easy by showing your support and admiration throughout my life. Happy Valentine’s Day my dear family.",  
+            "Duis aute irure dolor in reprehenderitThe love I have for you and the love I’ve got from you both is beyond comparison. Happy Valentine’s Day 2023.",
+            "In a world full of difficulties, you people are my safe place. Happy Valentine’s day to my family.",
+            "I do have a valentine but still want to wish ‘Happy Valentine’s Day’ to my dear family because I love them to the moon and back. You guys are the love of my life.",
+            "Happy Valentine’s Day. When I think about the word “love” you are the first person that pops into my head because you are the one who loves me the most and the one I love the most.",
+            "Wishing a happy Valentine’s day to all my family and friends. Thanks for always being so kind and loving me, and my family. I always keep you in my prayers and in good thoughts.",
+            "The most significant connection a person makes in his life is with his family and friends. On this Valentine’s Day, I hope to see all my family and friends even more in love with each other.",
+            "Wishing a happy Valentine’s Day to all of my family and friends. I wish everyone true happiness and I pray that love and peace fill your hearts.",
+            "Giving love makes it grow stronger! So, this Valentine’s Day, good friends and loving family, spread love everywhere you go and try to make the best of every circumstance!",
+            "Beloved family and friends, I am appreciative of your steadfast affection and kindness. I pray that you all experience harmony and joy this Valentine’s Day.",
+            "Happy Valentine’s Day, loved ones. May we be blessed with numerous wonderful experiences that we will cherish for the rest of our lives."
             ];
         
         var randomIndex = Math.floor(Math.random() * text.length);
@@ -223,10 +232,15 @@ function generateContent() {
 
     }else if (selectedGender === "Dad") {
         text = [  
-            "Consectetur adipiscing elit",   
-            "Sed do eiusmod tempor incididunt",   
-            "Ut labore et dolore magna aliqua",  
-            "Duis aute irure dolor in reprehenderit"
+            "You were, are and always will be the first hero of my life. I love you so much, dad. Happy Valentines Day.",   
+            "I will forever be blessed to have a father like you in my life, and I couldn’t let Valentine go by without telling you that I love you so much dad!",   
+            "Happy Valentine’s Day, dear papa. May this day of love treat you well and have a day filled with great memories. Love you so much",  
+            "Happy Valentine’s day Daddy. Your love shone the path of my life. I love you so much.",
+            "Dear Dad, to me, you are the definition of ‘Love’. Because you showed me how to love your family unconditionally. Happy Valentine’s Day.",
+            "Wishing my dear father the happiest Valentine’s Day. Go on a date with mom and have a great time. Love you",
+            "We don’t choose our parents. But if we could, I’d choose you as my dad in every life. Happy Valentine’s day.",
+            "Daddy, I am offering my unexpressed love to you this valentine’s day because you are the best dad I can have. Happy Valentine’s Day.",
+            "Papa, you are my first superhero and I cherish all the moments we share together. Happy Valentine’s Day."
             ];
         
         var randomIndex = Math.floor(Math.random() * text.length);
@@ -235,9 +249,11 @@ function generateContent() {
     }else if (selectedGender === "Mum") {
         text = [
             " I Cherish Our Late Night Chats, Our Coffee Dates, And The Way We Cry At Cheesy Movies. You’re An Amazing Mother And My Best Friend. I Love You So Much.. Happy Valentine’s Day!",   
-            "Happy Valentine’s Day Mom! It’s so easy to love you, Mom! You’re simply the best around!",   
-            "Ut labore et dolore magna aliqua",  
-            "Duis aute irure dolor in reprehenderit"
+            "Happy Valentine’s Day Mom! It’s so easy to love you, Mom! You’re simply the best around!",  
+            "Happy Valentine’s Day my mommy. May you keep glowing in this and every other day. Love you to the moon and back.",
+            "You are the first person I am in love with since my first breath. Happy Valentine’s Day Mommy!",
+            "Having you by my side makes my life unique and special- I’m super glad to be your child. Happy valentine’s Day.",
+            "Mom, the way you are always there for me through all my ups and downs, I wish to be there for you as well. You are never alone. Happy Valentine’s Day."
             ];
         
         var randomIndex = Math.floor(Math.random() * text.length);
@@ -247,9 +263,17 @@ function generateContent() {
         text = [
             " Happy Valentine’s Day, Sis! You make my life infinitely more awesome! I even love you more than cupcakes",  
             " Happy Valentine’s Day Sister! Wishing you a day filled with love and surprises-you deserve it! I love you a lot, always and forever.",   
-            "Sed do eiusmod tempor incididunt",   
-            "Ut labore et dolore magna aliqua",  
-            "Duis aute irure dolor in reprehenderit"
+            "Thank you for making my life more awesome, my beautiful sister. I love you more than chocolates. Happy Valentine’s Day.",   
+            "Happy Valentine’s Day, sister. I would be so lost without you; no one in the world understands me the way you do. You always know exactly what I am thinking or feeling even before I say a word.",  
+            "I love you my big/little sissy! I hope you find love that deserves you. Happy Valentines Day 2023.",
+            "Dear sister, may the seasoning of love embrace you and gift you a day filled with love and appreciation. Happy Valentine’s Day.",
+            "Happiest Valentine’s Day to my sister blister. Please enjoy your day and make sure to live to the fullest of it. Happy love day, again.",
+            "Sisters are the second moms; and you’re not different. Thank you for taking care of me and lifting up my spirit. Happy Valentine’s.",
+            "Happy Valentine’s day to the loveliest sister in the world. You make my life awesome.",
+            "Happy Valentine’s Day sister! Hope you have a wonderful valentine’s day full of love and surprises.",
+            "I hope you know that I fight with you because I love you. Happy Valentine’s Day sister. Have a great love-filled ones.",
+            "Happy Valentine’s Day dear sissy. I will always be there for you to protect you from anything and everything. I love you so much.",
+            ""
             ];
         
         var randomIndex = Math.floor(Math.random() * text.length);
@@ -257,12 +281,15 @@ function generateContent() {
 
     }else if (selectedGender === "Brother") {
         text = [
-            "Lorem ipsum dolor sit amet",  
-            "Consectetur adipiscing elit",   
-            "Sed do eiusmod tempor incididunt",   
-            "Ut labore et dolore magna aliqua",  
-            "Duis aute irure dolor in reprehenderit"
-            ];
+            "After Dad, you are my second superhero. Happy Valentine’s day dear brother.",  
+            "You are not only my brother. You are a shelter in this big world that I will always have. Happy Valentine’s day",   
+            "Dear brother, you are my best friend. Thanks for always making me feel valued. Love you to infinite. Happy Valentine’s Day",   
+            "Thanks for being such a special person and maintaining your territory so well. Happy Valentine’s Day, dear brother",  
+            "Happy Valentine’s Day. Brother, thank you for being my first and forever friend in life since the day I was born. It’s because of you that I never feel alone in my life.",
+            "Wish you a Valentine’s Day full of surprise. Surprising because I have already eaten the chocolates I have bought for you. Sorry, Big bro.",
+            "May this valentine remind you that I will forever love and adore you, little bro, you are the best little man I know!",
+            "Off all the brothers on this earth, I am glad you are mine! Happy Valentine’s day annoying yet adorable Brother!"
+        ];
         
         var randomIndex = Math.floor(Math.random() * text.length);
         var randomText = text[randomIndex];
