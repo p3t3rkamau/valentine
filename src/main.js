@@ -134,11 +134,26 @@ function generateContent() {
         var text;
     if (selectedGender === "BoyFriend") {
             text = [
-                "Lorem ipsum dolor sit amet",  
-                "Consectetur adipiscing elit",   
-                "Sed do eiusmod tempor incididunt",   
-                "Ut labore et dolore magna aliqua",  
-                "Duis aute irure dolor in reprehenderit"
+                "Happy Valentines Day to the man of my dreams! Be with me today and tomorrow, and forever! I love you.",  
+                "Happy Valentine’s Day, sweetheart! No words can describe how much grateful I’m to God for sending you to my life.",   
+                "Happy Valentine Day sweetheart! Sending you lots of hugs, kisses and love",   
+                "Happy Valentine’s Day. Sharing heart with someone could never be as joyful as it is with you!",  
+                "May the sweetness of love and the warmth of romance be with us on Valentine’s Day. Love you forever.",
+                "To my Valentine, I wish you all the happiness, love and joy. Love you forever",
+                "You are the best valentine I could have asked for. Thank you for all the thrills and grills. Cheers to another year of love and care. Happy valentine’s day.",
+                "Happy first Valentine’s Day, my Love! I hope we have many more valentines together as life partners.",
+                "Your love is a source of strength for me. Thank you for all of your kindness and love. Happy Valentine’s Day!",
+                "I have never fallen so deeply in love. When I’m around you, I feel so alive. You make me the happiest person on earth. Happy Valentine’s Day, my sweetheart.",
+                "To my Valentine, Happy Valentine’s Day! May our everlasting love tale experience more valentine’s day together. I will always love you no matter what.",
+                "Chocolates are sweet, flowers are romantic. But if you’re with me, I don’t need anything else. Happy valentine day my king!",
+                "My love for you keeps growing with time and distance. I wish you were here beside me on this beautiful day. Happy Valentine’s Day!",
+                "I loved you, I love you and I will love you forever. Let’s celebrate many more Valentine’s Days to come.",
+                "After so many years together, my feelings for you are still the same. And it will stay like this forever. You are the light of my life and the cause for all of my happiness! Happy Valentine’s Day, love!",
+                "My life is so full of tunes and pleasant memories because of you. It feels like a dream come true to have you as a partner. I’ll never grow weary of falling in love with you. I wish you a happy valentine’s day full of love and kisses!",
+                "It’s just one day in the year, but you should know that I love you every day and every moment. Take my love on this beautiful occasion!",
+                "I don’t want fancy gifts and fresh flowers. All I need is you holding my hands and saying that you love me. Happy Valentines Day.",
+                "We should be holding hands and sharing a conversation about how wonderful it is that we have each other. But know that my love for you goes beyond what words can express. Happy Valentine’s Day, sweetheart ❤️"
+
                 ];
             
         var randomIndex = Math.floor(Math.random() * text.length);
@@ -146,11 +161,26 @@ function generateContent() {
 
     } else if (selectedGender === "GirlFriend") {
         text = [
-            "Lorem ipsum dolor sit amet",  
-            "Consectetur adipiscing elit",   
-            "Sed do eiusmod tempor incididunt",   
-            "Ut labore et dolore magna aliqua",  
-            "Duis aute irure dolor in reprehenderit"
+            "My sweet valentine, I’m so glad that you’re all mine. Happy Valentine’s Day.",  
+            "I’m so happy to have you in my life. Happy Valentine’s day, girlfriend!",   
+            "Everything will change except my love for you! Happy Valentine’s Day!",   
+            "Life would be simply meaningless without you. Thank you for being my girlfriend. Happy Valentine’s day, love.",  
+            "Having you as my valentine for life is the biggest blessing there is and there will ever be. I love you my darling. Happy Valentine’s Day!",
+            "Happy Valentine’s Day, babe. Thank you for making each day of my life so memorable and special!",
+            "I may get tired of breathing someday but I’ll never get tired of loving you. Life is nothing without loving you. Happy Valentine Day!",
+            "May we keep growing this love even when we are apart. Thanks for being my favorite. Love you, my beloved girlfriend. Happy Valentine’s Day.",
+            "Thanks for shining so bright and making my life a better one just by existing, my darling girlfriend. Please stay happy and live the best life because your happy face means everything to me. Happy Valentine’s Day. Love you to the moon and all the way back.",
+            "I can’t stop loving you because it’s the only thing I’m good at and the only reason I was sent here on earth. I love you! Wishing you a happy valentine!",
+            "Thank you for the prettiest and most lovely valentine one could ever ask for. My heart breaks thinking about the distance between us, but I am glad that you are mine. Happy Valentine’s Day.",
+            "Happy Valentines Day 2023! I want to celebrate every Valentine’s Day with you because I consider loving you to be a privilege for which I will always be grateful.",
+            "You are the prettiest flower on the earth, and I am glad to have you in my garden of love. Have an awesome valentine.",
+            "Sometimes I wonder if I’m living a dream. Because so far I cannot believe how blessed I feel about your love. Happy Valentine’s Day.",
+            "You make me feel alive, and I am thankful to receive your abundant love and care. Happy Valentine’s Day!",
+            "Baby, I gave my heart to you the day we met, and I promise to keep yours warm and safe. I love you!",
+            "Happy Valentine’s Day to the world’s best girlfriend! I appreciate all that you do for me. I hope our love can unite us for the rest of our lives!",
+            "All my life, I have adored the bond we share now- I cannot wait to wife you and spend the rest of my life with you, pretty. May God bless you always. Happy valentine’s Day. Love you today, tomorrow, and forever.",
+            "My heart keeps beating for you even when we are apart, you are right here with me in my heart. Thanks for being my marvelous darling. Happy Valentine’s Day.",
+            "Your eyes speak a thousand words and your smile shines brighter than a thousand stars. For me, you’re a goddess! Happy Valentine’s Day!"
             ];
         
         var randomIndex = Math.floor(Math.random() * text.length);
@@ -158,11 +188,23 @@ function generateContent() {
 
     }else if (selectedGender === "Friend") {
         text = [
-            "Lorem ipsum dolor sit amet",  
-            "Consectetur adipiscing elit",   
-            "Sed do eiusmod tempor incididunt",   
-            "Ut labore et dolore magna aliqua",  
-            "Duis aute irure dolor in reprehenderit"
+            "Happy valentine’s Day, my beloved friend. Wishing you a day filled with joy, love, and precious moments.",  
+            "Valentine’s day is all about love, and to me, love is our friendship. I wish you a very happy Valentine’s Day.",   
+            "Happy Valentine’s Day, my dear friends. Life would be so empty without you all.",   
+            "Thank you for allowing me to be your best friend. I wish you a day full of love and happiness. Happy valentine’s day!",  
+            "May God send all the love in the world to each of us and shower his blessing on this lovely day. I wish everyone a lovely Valentine’s Day.",
+            "Happy Valentines Day! Sending my unconditional love to all my friends on Valentine’s Day!",
+            "Happy Valentine’s Day, bestie. Every memory I pass with you is special to me.",
+            "Thank you for embracing me with unconditional love and warmth in your life. I wish you a wonderful valentine’s day.",
+            "Bestie, I want to thank you for always being my supporter and motivator. Have fun and Happy Valentine’s Day!",
+            "You deserve the purest form of love any day, not just on valentine’s day. You have a heart full of love and empathy. Wishing you a happy valentine’s day!",
+            "Happy Valentine’s Day, my friend. I love you. My wish for you this Valentine’s is for you to find your soulmate soon this year so you may celebrate your next Valentine with the love of your life next to you.",
+            "I pray that God gives you love and peace in life. May find the right one to spend your life with. Sending my warm wishes to you on this valentine’s day!",
+            "Valentine’s Day is all about love, so I’m sending some of mine to you. Thanks for being a friend.",
+            "Happy Valentine’s Day, my best friend. I want you to have all the happiness in this world.",
+            "Every day is a great day for me to celebrate our friendship and the love we share. May this beautiful journey of my friendship with you never end. Happy valentine’s day!",
+            "Wishing you a very happy Valentine’s Day, my friends. Who needs a boyfriend or girlfriend when they have such supportive and lovely friends like you guys?",
+            "Thanks for being the most caring friend I have ever had. You are the best, friend! Happy valentine’s day 2023!"
             ];
         
         var randomIndex = Math.floor(Math.random() * text.length);
@@ -270,11 +312,15 @@ function generateContent() {
     if (selectedGender === "BoyFriend") {
 
         images = [
-            "src/images/800x600.jpg",
-            "src/images/41qaznWbStL.jpg",
-            "src/images/51+jItp5JiL.jpg",
-            "src/images/81LmaYlUyZL.png",
-            "src/61a0XRXzKDL.jpg" 
+            "src/images/Happy-Valentines-Day-My-Love (1).jpg",
+            "src/images/valentine-message-for-boyfriend.jpg",
+            "src/images/valentine-wishes-for-boyfriend-1.jpg",
+            "src/images/valentine-messages-for-boyfriend.jpg",
+            "src/images/first-valentines-day-messages-for-boyfriend.jpg",
+            "src/images/4545454545",
+            "src/images/Valentine-Card-Messages-for-Boyfriend.jpg",
+            "valentine-day-captions-for-boyfriend.jpg",
+            ""
             ];
         
             for (var i = 0; i < images.length; i++) {
@@ -284,11 +330,18 @@ function generateContent() {
 
     } else if (selectedGender === "GirlFriend") {
         images = [
-            "src/images/800x600.jpg",
-            "src/images/41qaznWbStL.jpg",
-            "src/images/51+jItp5JiL.jpg",
-            "src/images/81LmaYlUyZL.png",
-            "src/61a0XRXzKDL.jpg" 
+            "src/images/valentine-messages-for-girlfriend-2.jpg",
+            "src/images/happy-valentines-day-message-to-girlfriend.jpg",
+            "src/images/valentine-message-for-girlfriend.jpg",
+            "src/images/Valentine-Wishes-for-Girlfriend-1.jpg",
+            "src/images/valentine-day-wishes-for-girlfriend.jpg",
+            "src/images/valentine-day-wishes-for-long-distance-relationship.jpg",
+            "src/images/long-valentine-messages-for-girlfriend.jpg",
+            "src/images/ valentines-day-card-messages-for-girlfriend.jpg",
+            "src/images/valentine-wishes-for-girlfriend (1).jpg",
+            "src/images/Valentine-Messages-for-Girlfriend-1.jpg",
+            "src/images/valentine-day-quotes-for-girlfriend-1.jpg",
+            "src/images/Valentine-Caption-For-Girlfriend.jpg"
             ];
         
             for (var i = 0; i < images.length; i++) {
@@ -298,11 +351,14 @@ function generateContent() {
 
     }else if (selectedGender === "Friend") {
         images = [
-            "src/images/800x600.jpg",
-            "src/images/41qaznWbStL.jpg",
-            "src/images/51+jItp5JiL.jpg",
-            "src/images/81LmaYlUyZL.png",
-            "src/61a0XRXzKDL.jpg" 
+            "src/images/Happy-Valentines-Day-Friend.jpg",
+            "src/images/valentine-message-to-a-friend.jpg",
+            "src/images/valentine-messages-for-friends.jpg",
+            "src/images/valentine-messages-for-best-friend.jpg",
+            "src/images/happy-valentines-day-best-friend.jpg",
+            "Valentine-Day-Wishes-for-Best-Friend.jpg",
+            "Valentine’s-Day-Wishes-for-Single-Friend.jpg",
+            "happy-valentine-friendship-message.jpg" 
             ];
         
             for (var i = 0; i < images.length; i++) {
