@@ -105,7 +105,7 @@ function generateRandomQuotes(){
         "Share and celebrate your love with the people who matter most this February 14 with a beautiful Happy Valentines Day Wishes for your family members! There are Valentines day wishes for son, for daughter, for sister, for father, for mother, and for parents.",  
         "The love you have for your family forms the strongest bonds you will ever share with another person",   
         "Mothers, brothers, daughters, fathers, sisters, and sons. The people that form your family group are the most important people in your life, so let them know how much you love them with a Happy Valentine’s Day Wishes",   
-        "Ut labore et dolore magna aliquaShare your love and affections with the best people you know with the best Happy Valentine’s Day Wishes!",  
+        "Share your love and affections with the best people you know with the best Happy Valentine’s Day Wishes!",  
         ""
     ];
 
@@ -253,7 +253,20 @@ function generateContent() {
             "Happy Valentine’s Day my mommy. May you keep glowing in this and every other day. Love you to the moon and back.",
             "You are the first person I am in love with since my first breath. Happy Valentine’s Day Mommy!",
             "Having you by my side makes my life unique and special- I’m super glad to be your child. Happy valentine’s Day.",
-            "Mom, the way you are always there for me through all my ups and downs, I wish to be there for you as well. You are never alone. Happy Valentine’s Day."
+            "Mom, the way you are always there for me through all my ups and downs, I wish to be there for you as well. You are never alone. Happy Valentine’s Day.",
+            "When it comes to moms, you’re the sweetest one ever. I love you to pieces. Happy Valentine’s Day!",
+            "A beautiful spirit. A loving heart. Happy Valentine’s Day, Mom!",
+            "Sending lots of love from your favorite wild child! Happy Valentine’s Day, Mom",
+            "Happy Valentine’s Day Mom! No matter how old I get, you’ll always have my heart.",
+            "Mom, You’ve always shown your love in all that you do. I hope you know how much you mean to me. Happy Valentine’s Day!",
+            "Happy Valentine’s Day! Mom, you’re the sweetest person in my life. Wishing you a frosting topped, chocolate filled celebration!",
+            " Happy Valentine’s Day, Mom! May your heart be happy. May your days be bright. And may you always know how much you’re loved.",
+            "Happy Valentine’s Day! Hey Mom, I thought this cute baby covered in kisses would make up for anything bad I’ve done.",
+            "Mom, You are the heart and soul of our family. Your love nurtures us and keeps us thriving. Happy Valentine’s Day!",
+            "Friendly, lovable, obedient, adorable. I’m all that and more. (Oh, you thought I was talking about the dog?) Happy Valentine’s Day, Mom!",
+            "Having you for a mom is the greatest gift I could ever have received. You deserve to feel loved today. Having you for a mom is the greatest gift I could ever have received. You deserve to feel loved today.",
+            "Happy Valentine’s Day to My Wonderful Mother! While I don’t need a special day to tell you how I feel, I want you to know how much I love you, always.",
+            " I Cherish Our Late Night Chats, Our Coffee Dates, And The Way We Cry At Cheesy Movies. You’re An Amazing Mother And My Best Friend. I Love You So Much.. Happy Valentine’s Day!"
             ];
         
         var randomIndex = Math.floor(Math.random() * text.length);
@@ -296,11 +309,13 @@ function generateContent() {
 
     }else if (selectedGender === "Grand-pa") {
         text = [
-            "Lorem ipsum dolor sit amet",  
-            "Consectetur adipiscing elit",   
-            "Sed do eiusmod tempor incididunt",   
-            "Ut labore et dolore magna aliqua",  
-            "Duis aute irure dolor in reprehenderit"
+            "Grandpa, you’ll always own a piece of my heart! Happy Valentine’s Day!",  
+            "It’s very natural for you and others may not understand, but you’re a special grandfather a wonderful and special man! Happy Valentine’s Day!",   
+            "We all love you more than you’ll ever know, Grandpa! Happy Valentine’s Day!",   
+            "We couldn’t call you anything except 'grand' because you shine like the sun and have a heart that’s more precious than gold! Happy Valentine’s Day!",  
+            "We’ve got it good having you for a grandpa! You know we like to go first class all the way! Happy Valentine’s Day!",
+            "You deserve one of those Best Grandpa On the Planet awards! Happy Valentine’s Day!",
+            "You’re my grandfather, but you are also someone that I can come to for anything. Happy Valentine’s Day, Grandpop BFF"
             ];
         
         var randomIndex = Math.floor(Math.random() * text.length);
@@ -308,11 +323,18 @@ function generateContent() {
 
     }else if (selectedGender === "Grand-ma") {
         text = [
-            "Lorem ipsum dolor sit amet",  
-            "Consectetur adipiscing elit",   
-            "Sed do eiusmod tempor incididunt",   
-            "Ut labore et dolore magna aliqua",  
-            "Duis aute irure dolor in reprehenderit"
+            "No one has a grandmother as great as mine. You’re so amazing I’m super happy that you’re my Valentine!",  
+            "Wishing you a Valentine’s Day that’s wonderful from start to finish! Have a great day, Grandma",   
+            "For My Special Grandmom, you’re Valentine’s I’ll be. But, only if you promise to be the same for me! With Love From Your Granddaughter!",   
+            "For Valentine’s Day, I’m sending you hugs, kisses, and wishes you’ll like. You’re the world’s most awesome grandmother and I hope that Valentine’s Day is full of delight!",  
+            "Here’s a Valentine’s Day greeting just for you Nana! It’s full of hugs, kisses, but not one banana!",
+            "Hope your Valentine’s Day is all about you and everything that makes you happy, Grandma!",
+            "Hope your Valentine’s Day makes you super happy, Grandma!",
+            "I couldn’t imagine having anybody else for a grandmom. You’re just so absolutely perfect at it! Happy Valentine’s Day With Love From Your Granddaughter!",
+            "I get my smarts from you, Grandma. You’re as bright as they come. Being your granddaughter is very cool and so much fun! Happy Valentine’s Day, Grandma!",
+            "I love a lot of things about you .way to many to count! Happy Valentine’s Day, Grandma!",
+            "I love you in the morning and I love you late at night. Grandmother, I hope that you have a Happy Valentine’s!",
+            "If baked goods are any indication of how much you really care. Then, I know you loves me bunches because, Grandma, you are always there! Happy Valentine’s Day!"
             ];
         
         var randomIndex = Math.floor(Math.random() * text.length);
