@@ -23,6 +23,17 @@ if (this.checked) {
 }
 });
 
+
+// check why its not exiting
+const closeImagePreview = document.querySelector('.close-image-preview');
+const Holder = document.querySelector('.holder');
+
+closeImagePreview.addEventListener('click',function(){
+    Holder.style.display = 'none'
+});
+
+
+
  
  // var checkbox1 = document.getElementById("imageCheckbox");
         // var checkbox2 = document.getElementById("textCheckbox");
