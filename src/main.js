@@ -492,11 +492,10 @@ function generateContent() {
         }
     }else if (selectedGender === "Other-Fam-Members") {
         images = [
-            "src/images/800x600.jpg",
-            "src/images/41qaznWbStL.jpg",
-            "src/images/51+jItp5JiL.jpg",
-            "src/images/81LmaYlUyZL.png",
-            "src/61a0XRXzKDL.jpg" 
+            "src/images/valentine-messages-for-family.jpg",
+            "src/images/valentines-day-quotes-for-family.jpg",
+            "src/images/valentine-messages-for-family-members.jpg",
+            "src/images/valentine-messages-for-family-and-friends.jpg"
             ];
         
             for (var i = 0; i < images.length; i++) {
