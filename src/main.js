@@ -292,11 +292,20 @@ function generateContent() {
         var randomText = text[randomIndex];
     }else if (selectedGender === "Other-Fam-Members") {
         text = [
-            "Lorem ipsum dolor sit amet",  
-            "Consectetur adipiscing elit",   
-            "Sed do eiusmod tempor incididunt",   
-            "Ut labore et dolore magna aliqua",  
-            "Duis aute irure dolor in reprehenderit"
+            "Happy Valentine’s day to my amazing family and friends. Spending my life with you all is the biggest blessing.",  
+            "Happy Valentine’s Day to my precious family. May this day of love brings you happy thoughts. Best wishes",   
+            "Sending you lovely wishes for Valentine’s Day, my dear family. Let’s laugh, love, and celebrate together",   
+            "Dear family, happy Valentine’s Day. May we keep flourishing with love and happiness. Wishing you a great day ahead.",  
+            "Happy Valentine’s Day dearest family. I am lucky to have you in my life.",
+            "Wishing you lots of love and fun on this day of love. May all your prayers get answered. Love you.",
+            "Thanks for filling my life with such positivity and love, dear family. Happy Valentine’s Day. Thanks for everything.",
+            "Dear mom and dad, sending you warm wishes for Valentine’s Day. Thanks for being so loving and caring not only towards each other but to me as well. Love you two tons.",
+            "Happy Valentine’s Day. Thank you guys for never leaving the option to usher me with your love and admiration.",
+            "Family has the power to turn a place into a home. Happy Valentine’s day to you all.",
+            "My family has been my valentine since I was born because the kind of love they gave me is exquisite. Happy Valentine’s Day dear family.",
+            "Wishing a very happy valentine’s day to every member of my family. You do not know how grateful I am to you for making my life this beautiful.",
+            "You guys are my most valuable treasure and the ones for whom I can fight with the whole world. Happy Valentine’s Day.",
+            ""
             ];
         
         var randomIndex = Math.floor(Math.random() * text.length);
