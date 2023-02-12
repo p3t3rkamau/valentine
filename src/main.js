@@ -498,6 +498,10 @@ function generateContent() {
 
 const wallpapers = [
     "src/images/wp5431349.jpg",
+    "src/images/61a0XRXzKDL.jpg",
+    "src/images/wp10632453.jpg"
+   
+
     // "src/images/41qaznWbStL.jpg",
     // "src/images/wp5318448.jpg",
     // "src/images/wp5483040 (1).jpg",
