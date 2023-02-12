@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Document</title>
+    <link rel="stylesheet" href="src/main.css">
+</head>
+<body>
+    <header></header>
+    <main>
+        <section>
+            <container>
+                <div class="hero-section">
+                    <p class="quote" onload="generateRandomQuotes()" >ghsdghdhsgh</p>
+                </div>
+                <div class="wish-message">
+                    <h1>If you have someone special and want to wish them happy valentine click below</h1>
+                </div>
+                <div class="down-arrow">
+                    <i class='bx bxs-downvote'></i>
+                </div>
+                <form action="" class="form">
+                    <input type="text" placeholder="Recipient Name">
+                    <select id="genderSelect">Gender
+                        <option>BoyFriend</option>
+                        <option>GirlFriend</option>
+                        <option>Friend</option>
+                        <option>Dad</option>
+                        <option>Mum</option>
+                        <option>Sister</option>
+                        <option>Brother</option>
+                        <option>Grand-pa</option>
+                        <option>Grand-ma</option>
+                        <option>Other-Fam-Members</option>
+                    </select>
+                </form>
+                <div class="options">
+                    <h1>Do you wish to send an Image,Gif or Text</h1>
+                </div>
+                <div class="checkbox">
+                    <table>
+                      <tr>
+                        <td><input type="checkbox" name="checkbox" id="imageCheckbox">Image</td>
+                        <td><input type="checkbox" name="checkbox" id="textCheckbox">Text</td>
+                        <td><input type="checkbox" name="checkbox" id="gifCheckbox">Gif</td>
+                      </tr>
+                    </table>
+                </div>
+                <div class="create-button" >
+                    <button id="createButton" onclick="generateContent()">CREATE</button>
+                </div>
+                </div>
+                    <div id="content"></div>
+                    <p id="generatedText"></p>
+                    <div id="generatedImages"></div>
+                    <div id="generatedGifs"></div>
+                </div>
+                <div class="gallery">
+                    <h1>Choose A Template</h1>
+                    <button>Choose</button>
+                </div>
+
+                
+            </container>
+        </section>
+    </main>
+
+    <script src="src/main.js"></script>
+</body>
+</html>
