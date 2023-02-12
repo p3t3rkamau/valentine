@@ -71,6 +71,7 @@
             border: none;
             outline: none;
             font-size: 18px;
+            border-radius: 20px;
         }
         select{
             width: 70%;
@@ -78,6 +79,8 @@
             border: none;
             outline: none;
             font-size: 18px;
+            border-radius: 20px;
+            margin-top: 23px;
         }
         option{
             width: 40px;
@@ -101,12 +104,12 @@
         }
         table{
             position: absolute;
-            margin-left: 29px;
+            margin-left: 26px;
             align-items: center;
             text-align: center;
             justify-items: center;
             margin-top: 270px;
-            translate: 22%;
+            translate: 6%;
 
 
         }
@@ -118,13 +121,21 @@
             position: absolute;
             align-items: center;
             text-align: center;
-            margin-left: 10em;
             justify-items: center;
             margin-top: 40rem;
+            translate: 80%;
+            font-size: 18px;
         }
         button{
             width: 100%;
-            padding: 10px 30px;
+            padding: 10px 40px;
+            border-radius: 20px;
+            background-color: red;
+            color: white;
+            transition: .5s;
+        }
+        button:hover{
+            background-color: brown;
         }
         .gallery{
             position: absolute;
@@ -138,6 +149,7 @@
         .gallery button{
             width: 60%;
             margin-top: 1rem;
+            margin-bottom: 2rem;
         }
             
             /* @media screen and (min-width: 501px) {
