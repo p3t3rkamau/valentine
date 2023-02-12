@@ -100,22 +100,22 @@ if (this.checked) {
         //     }
         // });
 
-        function generateRandomQuotes(){
-            var quote = [
-                "Share and celebrate your love with the people who matter most this February 14 with a beautiful Happy Valentines Day Wishes for your family members! There are Valentines day wishes for son, for daughter, for sister, for father, for mother, and for parents.",  
-                "The love you have for your family forms the strongest bonds you will ever share with another person",   
-                "Mothers, brothers, daughters, fathers, sisters, and sons. The people that form your family group are the most important people in your life, so let them know how much you love them with a Happy Valentine’s Day Wishes",   
-                "Ut labore et dolore magna aliquaShare your love and affections with the best people you know with the best Happy Valentine’s Day Wishes!",  
-                ""
-            ];
-        
-            var randomloveQuote = Math.floor(Math.random() * quote.length);
-            var randomlove = quote[randomloveQuote];
-            document.querySelector('.quote').innerHTML = randomlove;
-        }
-        
-        generateRandomQuotes();
-        
+function generateRandomQuotes(){
+    var quote = [
+        "Share and celebrate your love with the people who matter most this February 14 with a beautiful Happy Valentines Day Wishes for your family members! There are Valentines day wishes for son, for daughter, for sister, for father, for mother, and for parents.",  
+        "The love you have for your family forms the strongest bonds you will ever share with another person",   
+        "Mothers, brothers, daughters, fathers, sisters, and sons. The people that form your family group are the most important people in your life, so let them know how much you love them with a Happy Valentine’s Day Wishes",   
+        "Ut labore et dolore magna aliquaShare your love and affections with the best people you know with the best Happy Valentine’s Day Wishes!",  
+        ""
+    ];
+
+    var randomloveQuote = Math.floor(Math.random() * quote.length);
+    var randomlove = quote[randomloveQuote];
+    document.querySelector('.quote').innerHTML = randomlove;
+}
+
+generateRandomQuotes();
+
 
 
 
@@ -356,9 +356,9 @@ function generateContent() {
             "src/images/valentine-messages-for-friends.jpg",
             "src/images/valentine-messages-for-best-friend.jpg",
             "src/images/happy-valentines-day-best-friend.jpg",
-            "Valentine-Day-Wishes-for-Best-Friend.jpg",
-            "Valentine’s-Day-Wishes-for-Single-Friend.jpg",
-            "happy-valentine-friendship-message.jpg" 
+            "src/images/Valentine-Day-Wishes-for-Best-Friend.jpg",
+            "src/images/Valentine’s-Day-Wishes-for-Single-Friend.jpg",
+            "src/images/happy-valentine-friendship-message.jpg" 
             ];
         
             for (var i = 0; i < images.length; i++) {
