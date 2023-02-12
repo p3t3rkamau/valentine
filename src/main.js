@@ -102,11 +102,11 @@ if (this.checked) {
 
         function generateRandomQuotes(){
             var quote = [
-                "Lorem ipsum dolor sit amet",  
-                "Consectetur adipiscing elit",   
-                "Sed do eiusmod tempor incididunt",   
-                "Ut labore et dolore magna aliqua",  
-                "Duis aute irure dolor in reprehenderit"
+                "Share and celebrate your love with the people who matter most this February 14 with a beautiful Happy Valentines Day Wishes for your family members! There are Valentines day wishes for son, for daughter, for sister, for father, for mother, and for parents.",  
+                "The love you have for your family forms the strongest bonds you will ever share with another person",   
+                "Mothers, brothers, daughters, fathers, sisters, and sons. The people that form your family group are the most important people in your life, so let them know how much you love them with a Happy Valentine’s Day Wishes",   
+                "Ut labore et dolore magna aliquaShare your love and affections with the best people you know with the best Happy Valentine’s Day Wishes!",  
+                ""
             ];
         
             var randomloveQuote = Math.floor(Math.random() * quote.length);
@@ -127,6 +127,7 @@ function generateContent() {
     var genderSelect = document.getElementById("genderSelect");
     var content = document.getElementById("content");
     content.innerHTML = "";
+
 
     if (textCheckbox.checked) {
         var selectedGender = genderSelect.value;
@@ -166,10 +167,20 @@ function generateContent() {
         
         var randomIndex = Math.floor(Math.random() * text.length);
         var randomText = text[randomIndex];
+    }else if (selectedGender === "parents") {
+        text = [
+            "Happy Valentine’s Day To My Amazing Parents. You make love look so easy. I’m glad to be the daughter of two people who’ve always been so in love", 
+            " Happy Valentine’s Day, My Dear Son! There never was a more delightful son! I love you so much and am thinking of you always!",   
+            "Happy Valentine’s Day To My Son. Sending you all my love and plenty of hugs! You really are the sweetest son a mother could ask for!",   
+            "Ut labore et dolore magna aliqua",  
+            "Duis aute irure dolor in reprehenderit"
+            ];
+        
+        var randomIndex = Math.floor(Math.random() * text.length);
+        var randomText = text[randomIndex];
 
     }else if (selectedGender === "Dad") {
-        text = [
-            "Lorem ipsum dolor sit amet",  
+        text = [  
             "Consectetur adipiscing elit",   
             "Sed do eiusmod tempor incididunt",   
             "Ut labore et dolore magna aliqua",  
@@ -181,9 +192,8 @@ function generateContent() {
 
     }else if (selectedGender === "Mum") {
         text = [
-            "Lorem ipsum dolor sit amet",  
-            "Consectetur adipiscing elit",   
-            "Sed do eiusmod tempor incididunt",   
+            " I Cherish Our Late Night Chats, Our Coffee Dates, And The Way We Cry At Cheesy Movies. You’re An Amazing Mother And My Best Friend. I Love You So Much.. Happy Valentine’s Day!",   
+            "Happy Valentine’s Day Mom! It’s so easy to love you, Mom! You’re simply the best around!",   
             "Ut labore et dolore magna aliqua",  
             "Duis aute irure dolor in reprehenderit"
             ];
@@ -193,8 +203,8 @@ function generateContent() {
 
     }else if (selectedGender === "Sister") {
         text = [
-            "Lorem ipsum dolor sit amet",  
-            "Consectetur adipiscing elit",   
+            " Happy Valentine’s Day, Sis! You make my life infinitely more awesome! I even love you more than cupcakes",  
+            " Happy Valentine’s Day Sister! Wishing you a day filled with love and surprises-you deserve it! I love you a lot, always and forever.",   
             "Sed do eiusmod tempor incididunt",   
             "Ut labore et dolore magna aliqua",  
             "Duis aute irure dolor in reprehenderit"
@@ -299,6 +309,19 @@ function generateContent() {
             var randomIndex = Math.floor(Math.random() * images.length);
             var randomImage = images[randomIndex];
         }
+    }else if (selectedGender === "parents") {
+        images = [
+            "src/images/valentine77 (1).png",
+            "src/images/valentine78.png",
+            "src/images/valentine68 (1).png",
+            "src/images/valentine69.png",
+            "src/61a0XRXzKDL.jpg" 
+            ];
+        
+            for (var i = 0; i < images.length; i++) {
+            var randomIndex = Math.floor(Math.random() * images.length);
+            var randomImage = images[randomIndex];
+        }
     }else if (selectedGender === "Dad") {
         images = [
             "src/images/800x600.jpg",
@@ -314,10 +337,8 @@ function generateContent() {
         }
     }else if (selectedGender === "Mum") {
         images = [
-            "src/images/800x600.jpg",
-            "src/images/41qaznWbStL.jpg",
-            "src/images/51+jItp5JiL.jpg",
-            "src/images/81LmaYlUyZL.png",
+            "src/images/valentine72.png",
+            "src/images/valentine71.png",
             "src/61a0XRXzKDL.jpg" 
             ];
         
@@ -327,8 +348,8 @@ function generateContent() {
         }
     }else if (selectedGender === "Sister") {
         images = [
-            "src/images/800x600.jpg",
-            "src/images/41qaznWbStL.jpg",
+            "src/images/valentine79.png",
+            "src/images/valentine80 (1).png",
             "src/images/51+jItp5JiL.jpg",
             "src/images/81LmaYlUyZL.png",
             "src/61a0XRXzKDL.jpg" 
@@ -391,7 +412,7 @@ function generateContent() {
             var randomImage = images[randomIndex];
         }
     }
-    content.innerHTML += `<img src="${randomImage}"  width="150" height="150" />`;
+    content.innerHTML += `<img src="${randomImage}" />`;
     }
 // //////////////// gif selection/////////////////////
     if (gifCheckbox.checked) {
@@ -475,17 +496,44 @@ function generateContent() {
     }
 }
 
-// const wallpapers = [
-//     "src/images/800x600.jpg",
-//     "src/images/41qaznWbStL.jpg",
-//     "src/images/51+jItp5JiL.jpg",
-//     "src/images/81LmaYlUyZL.png",
-//     "src/61a0XRXzKDL.jpg"
-//     ];
+const wallpapers = [
+    "src/images/wp5484274.jpg",
+    "src/images/41qaznWbStL.jpg",
+    "src/images/wp5318448.jpg",
+    "src/images/wp5483040 (1).jpg",
+    "src/images/61a0XRXzKDL.jpg",
+    "src/images/wp5430869 (1).jpg",
+    "src/images/wp5226104.jpg",
+    "src/images/wp5431097.jpg",
+    "src/images/wp5204841.png",
+    "src/images/wp5318444.jpg ",
+    "src/images/wp5318470.png ",
+    "src/images/wp5318447.jpg",
+    "src/images/wp5233809.jpg",
+    "src/images/wp2884606.jpg",
+    "src/images/wp3369880.png",
+    "src/images/wp2376990.jpg",
+    "src/images/wp5318449.jpg",
+    "src/images/wp5484361.jpg",
+    "src/images/wp5484364.jpg",
+    "src/images/wp5484367.jpg",
+    "src/images/wp5431349.jpg",
+    "src/images/wp5430869 (1).jpg",
+    "src/images/wp5483206.jpg",
+    "src/images/wp10632453.jpg",
+    "src/images/wp11891191.jpg",
+    "src/images/wp5553765.jpg",
+    "src/images/wp11891203.jpg",
+    "src/images/wp5430996.jpg",
+    "src/images/wp11891242.png",
+    "src/images/wp11891243.png",
+    "src/images/wp5318459.jpg"
+    ];
 
-//     const body = document.querySelector("body");
-//     const randomIndex = Math.floor(Math.random() * wallpapers.length);
-//     const randomWallpaper = wallpapers[randomIndex];
+    const body = document.querySelector("body");
 
-// body.style.backgroundImage = `url(${randomWallpaper})`;
+    const randomIndex = Math.floor(Math.random() * wallpapers.length);
+    const randomWallpaper = wallpapers[randomIndex];
+
+body.style.backgroundImage = `url(${randomWallpaper})`;
 
