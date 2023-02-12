@@ -453,7 +453,18 @@ function generateContent() {
         images = [
             "src/images/valentine72.png",
             "src/images/valentine71.png",
-            "src/61a0XRXzKDL.jpg" 
+            "src/images/61a0XRXzKDL.jpg",
+            "src/images/j_valmo_001.png",
+            "src/images/j_valmo_007.png",
+            "src/images/j_valmo_002.png",
+            "src/images/j_valmo_003.png",
+            "src/images/j_valmo_005.png",
+            "src/images/j_valmo_004.png",
+            "src/images/j_valmo_009.png",
+            "src/images/j_valmo_006.png",
+            "src/images/j_valmo_010.png",
+            "src/images/j_valmo_011.png",
+            "src/images/j_valmo_011.png",
             ];
         
             for (var i = 0; i < images.length; i++) {
