@@ -498,8 +498,13 @@ function generateContent() {
 
 const wallpapers = [
     "src/images/wp5431349.jpg",
-    "src/images/61a0XRXzKDL.jpg",
-    "src/images/wp10632453.jpg"
+    "src/images/wp4127943.jpg",
+    "src/images/wp10632453.jpg",
+    "src/images/Existence-of-black-roses-on-Thursd-.jpg",
+    "src/images/adrian-regeci-DduZa62Shq0-unsplash (2).jpg"
+
+   
+    
    
 
     // "src/images/41qaznWbStL.jpg",
