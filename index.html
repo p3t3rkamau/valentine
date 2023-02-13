@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.5.0-beta4/html2canvas.min.js"></script>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>Document</title>
     <link rel="stylesheet" href="src/main.css">
@@ -14,17 +15,32 @@
         <section>
             <container>
                 <div class="holder">
-                    <button class="close-image-preview">Exit</button>
+                    <i class='bx bx-x' id="close"></i>
                     <big-image>
-                        <div id="content"><!-- this is where the random image comes --></div>
+                        <div id="content"><!-- this is where the random image comes -->
+                            <div id="image-error" style="display:none;">Image failed to load. Please try again later.</div>
+                        </div>
                     </big-image>
                     <div class="other-options">
-                        <button id="createButton" onclick="generateContent()">NEXT</button>
-                        <button id="download-button">Download</button>
+                        <button id="createButton" onclick="generateContent()">GENERATE</button>
+                        <i class='bx bxs-download' id="download-button"></i>
+                        <button id="download-text" style="display:none;">Copy Text</button>
                         <button id="copy-link-button">Copy Link</button>
-                        <input type="text" id="image-url" value="">
+                        <input type="text" id="image-url" value="" style="display:none;">
                         <button>edit text</button>
-                        <button id="share-whatsapp-button">Share</button>
+                        <i class='bx bx-share-alt'id="share-button">Share</i>
+                         <div class="share" style="display:none;">
+                            <i class='bx bxl-whatsapp' id="whatsapp"></i>  
+                            <i class='bx bxl-facebook-square' id="fb">
+                                <a href= ${randomImage} onclick="
+                                window.open(
+                                  'https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(location.href), 
+                                  'facebook-share-dialog', 
+                                  'width=626,height=436'); 
+                                return false;">
+                                </a>
+                             </i> 
+                         </div>                        
                         <button id="screenshot-button">Screenshot</button>
                     </div>
                 </div>
@@ -70,7 +86,7 @@
                     </div>
                     <div class="create-button" >
                        
-                        <button class="create">CREATE</button>
+                        <button class="create" id="createButton" onclick="generateContent()">CREATE</button>
                     </div>
                     </div>
                         

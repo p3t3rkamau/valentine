@@ -39,7 +39,7 @@ Create.addEventListener('click', function(){
     gallery.style.display = 'none'
 });
 
-document.querySelector(".close-image-preview").addEventListener("click", function() {
+document.querySelector("#close").addEventListener("click", function() {
     const holder = document.querySelector(".holder");
     for (let i = 0; i < holder.children.length; i++){
       holder.children[i].style.display = "none";
@@ -53,16 +53,44 @@ document.querySelector(".close-image-preview").addEventListener("click", functio
 
 document.querySelector("#copy-link-button").addEventListener("click", function() {
     const imageUrlInput = document.querySelector("#image-url");
-    imageUrlInput.value =  randomImage;
+    imageUrlInput.style.display = "block";
+    imageUrlInput.value = "https://wish-every-one-happy-valentines.netlify.app/";
     imageUrlInput.select();
     document.execCommand("copy");
 });
 
-document.querySelector("#share-whatsapp-button").addEventListener("click", function() {
-    const imageUrl = "https://wish-every-one-happy-valentines.netlify.app/" + randomImage;
-    const shareMessage = encodeURIComponent("Check out this amazing image! " + imageUrl);
+const sharebtn = document.querySelector('#share-button');
+const shareContainer = document.querySelector('.share');
+sharebtn.addEventListener('click', function(){
+    shareContainer.style.display = 'block'
+
+})
+
+document.querySelector("#whatsapp").addEventListener("click", function() {
+    const imageUrl = "https://wish-every-one-happy-valentines.netlify.app/";
+    const shareMessage = encodeURIComponent("Check out this amazing image from peters website! " + imageUrl);
     window.open("https://api.whatsapp.com/send?text=" + shareMessage, "_blank");
 });
+
+document.querySelector("#createButton").addEventListener("click", function() {
+  this.innerHTML = "NEXT";
+});
+
+
+document.querySelector("img").onerror = function() {
+    console.log("Image failed to load");
+    document.querySelector("#image-error").style.display = "block";
+};
+  
+
+
+// document.getElementById("share-button").addEventListener("click", function() {
+//     FB.ui({
+//       method: 'share',
+//       display: 'popup',
+//       href: 'https://example.com/image.jpg',
+//     }, function(response){});
+//   });
 
 document.querySelector("#screenshot-button").addEventListener("click", function() {
     html2canvas(document.querySelector("#content")).then(canvas => {
@@ -168,11 +196,18 @@ function generateRandomQuotes(){
 
 generateRandomQuotes();
 
-
+document.querySelector("#text-checkbox").addEventListener("click", function() {
+    const downloadButton = document.querySelector("#download-button");
+    if (this.checked) {
+      downloadButton.setAttribute("disabled", "disabled");
+    } else {
+      downloadButton.removeAttribute("disabled");
+    }
+  });
 
 function generateContent() {
     var imageCheckbox = document.getElementById("imageCheckbox");
-    var textCheckbox = document.getElementById("textCheckbox");
+    textCheckbox = document.getElementById("textCheckbox");
     var gifCheckbox = document.getElementById("gifCheckbox");
     var genderSelect = document.getElementById("genderSelect");
     var content = document.getElementById("content");
@@ -411,6 +446,7 @@ function generateContent() {
         var randomText = text[randomIndex];
     }
     content.innerHTML += `<p>${randomText}</p>`;}
+    content.style.marginTop = '4rem'
 
     // ////////////////////image selection/////////////////////////////////
 
