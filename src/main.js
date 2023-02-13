@@ -48,6 +48,15 @@ document.querySelector(".close-image-preview").addEventListener("click", functio
     hideAll.style.display = 'block'
     gallery.style.display = 'block'
 });
+
+
+
+document.querySelector("#copy-link-button").addEventListener("click", function() {
+    const imageUrlInput = document.querySelector("#image-url");
+    imageUrlInput.value =  randomImage;
+    imageUrlInput.select();
+    document.execCommand("copy");
+});
   
  // var checkbox1 = document.getElementById("imageCheckbox");
         // var checkbox2 = document.getElementById("textCheckbox");
