@@ -35,8 +35,8 @@ Create.addEventListener('click', function(){
       holder.children[i].style.display = "block";
       holder.style.background = "black";
     }
-    hideAll.style.display = 'none'
-    gallery.style.display = 'none'
+    hideAll.style.display = 'block'
+    gallery.style.display = 'block'
 });
 
 document.querySelector("#close").addEventListener("click", function() {
@@ -45,8 +45,8 @@ document.querySelector("#close").addEventListener("click", function() {
       holder.children[i].style.display = "none";
       holder.style.background = "none"
     }
-    hideAll.style.display = 'block'
-    gallery.style.display = 'block'
+    hideAll.style.display = 'none'
+    gallery.style.display = 'none'
 });
 
 
