@@ -62,8 +62,19 @@ document.querySelector("#share-whatsapp-button").addEventListener("click", funct
     const imageUrl = "https://wish-every-one-happy-valentines.netlify.app/" + randomImage;
     const shareMessage = encodeURIComponent("Check out this amazing image! " + imageUrl);
     window.open("https://api.whatsapp.com/send?text=" + shareMessage, "_blank");
-  });
+});
+
+document.querySelector("#screenshot-button").addEventListener("click", function() {
+    html2canvas(document.querySelector("#content")).then(canvas => {
+      const link = document.createElement("a");
+      link.download = "screenshot.png";
+      link.href = canvas.toDataURL();
+      link.click();
+    });
+});
   
+
+
   
  // var checkbox1 = document.getElementById("imageCheckbox");
         // var checkbox2 = document.getElementById("textCheckbox");
