@@ -26,21 +26,29 @@ if (this.checked) {
 });
 
 
-// check why its not exiting
-const closeImagePreview = document.querySelector('.close-image-preview');
-const Holder = document.querySelector('.holder');
-
-closeImagePreview.addEventListener('click',function(){
-
-    Holder.style.display = 'none'
+const Create = document.querySelector('.create');
+const hideAll = document.querySelector('.hide-all')
+const gallery = document.querySelector('.gallery');
+Create.addEventListener('click', function(){
+    const holder = document.querySelector(".holder");
+    for (let i = 0; i < holder.children.length; i++){
+      holder.children[i].style.display = "block";
+      holder.style.background = "black";
+    }
+    hideAll.style.display = 'none'
+    gallery.style.display = 'none'
 });
 
-
-
-
-
-
- 
+document.querySelector(".close-image-preview").addEventListener("click", function() {
+    const holder = document.querySelector(".holder");
+    for (let i = 0; i < holder.children.length; i++){
+      holder.children[i].style.display = "none";
+      holder.style.background = "none"
+    }
+    hideAll.style.display = 'block'
+    gallery.style.display = 'block'
+});
+  
  // var checkbox1 = document.getElementById("imageCheckbox");
         // var checkbox2 = document.getElementById("textCheckbox");
         // var checkbox3 = document.getElementById("gifCheckbox");

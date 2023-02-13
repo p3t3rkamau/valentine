@@ -16,7 +16,7 @@
                 <div class="holder">
                     <button class="close-image-preview">Exit</button>
                     <big-image>
-                        <div id="content"></div>
+                        <div id="content"><!-- this is where the random image comes --></div>
                     </big-image>
                     <div class="other-options">
                         <button id="createButton" onclick="generateContent()">NEXT</button>
@@ -27,58 +27,63 @@
                         <button>Screenshot</button>
                     </div>
                 </div>
-                <div class="hero-section">
-                    <p class="quote" onload="generateRandomQuotes()" ></p>
-                </div>
-                <div class="wish-message">
-                    <h1>If you have someone special and want to wish them happy valentine click below</h1>
-                </div>
-                <div class="down-arrow">
-                    <i class='bx bxs-downvote'></i>
-                </div>
-                <form action="" class="form">
-                    <input type="text" placeholder="Recipient Name">
-                    <select id="genderSelect">Gender
-                        <option>BoyFriend</option>
-                        <option>GirlFriend</option>
-                        <option>Friend</option>
-                        <option>parents</option>
-                        <option>Dad</option>
-                        <option>Mum</option>
-                        <option>Sister</option>
-                        <option>Brother</option>
-                        <option>Grand-pa</option>
-                        <option>Grand-ma</option>
-                        <option>Other-Fam-Members</option>
-                    </select>
-                </form>
-                <div class="options">
-                    <h1>Do you wish to send an Image,Gif or Text</h1>
-                </div>
-                <div class="checkbox">
-                    <table>
-                      <tr>
-                        <td><input type="checkbox" name="checkbox" id="imageCheckbox" checked>Image</td>
-                        <td><input type="checkbox" name="checkbox" id="textCheckbox">Text</td>
-                        <td><input type="checkbox" name="checkbox" id="gifCheckbox">Gif</td>
-                      </tr>
-                    </table>
-                </div>
-                <div class="create-button" >
-                    <button id="createButton" onclick="generateContent()">CREATE</button>
-                </div>
-                </div>
-                    
-                    <p id="generatedText"></p>
-                    <div id="generatedImages"></div>
-                    <div id="generatedGifs"></div>
-                </div>
-                <div class="gallery">
-                    <h1>Choose A Template</h1>
-                    <button>Choose</button>
-                </div>
-
                 
+                <div class="hide-all">
+                    <div class="hero-section">
+                        <p class="quote" onload="generateRandomQuotes()" ></p>
+                    </div>
+                    <div class="wish-message">
+                        <h1>If you have someone special and want to wish them happy valentine click below</h1>
+                    </div>
+                    <div class="down-arrow">
+                        <i class='bx bxs-downvote'></i>
+                    </div>
+                    <form action="" class="form">
+                        <input type="text" placeholder="Recipient Name">
+                        <select id="genderSelect">Gender
+                            <option>BoyFriend</option>
+                            <option>GirlFriend</option>
+                            <option>Friend</option>
+                            <option>parents</option>
+                            <option>Dad</option>
+                            <option>Mum</option>
+                            <option>Sister</option>
+                            <option>Brother</option>
+                            <option>Grand-pa</option>
+                            <option>Grand-ma</option>
+                            <option>Other-Fam-Members</option>
+                        </select>
+                    </form>
+                    <div class="options">
+                        <h1>Do you wish to send an Image,Gif or Text</h1>
+                    </div>
+                    
+                    <div class="checkbox">
+                        <table>
+                          <tr>
+                            <td><input type="checkbox" name="checkbox" id="imageCheckbox" checked>Image</td>
+                            <td><input type="checkbox" name="checkbox" id="textCheckbox">Text</td>
+                            <td><input type="checkbox" name="checkbox" id="gifCheckbox">Gif</td>
+                          </tr>
+                        </table>
+                    </div>
+                    <div class="create-button" >
+                       
+                        <button class="create">CREATE</button>
+                    </div>
+                    </div>
+                        
+                        <p id="generatedText"></p>
+                        <div id="generatedImages"></div>
+                        <div id="generatedGifs"></div>
+                    </div>
+                    <div class="gallery">
+                        <h1>Choose A Template</h1>
+                        <button>Choose</button>
+                    </div>
+    
+                    
+                </div>
             </container>
         </section>
     </main>
