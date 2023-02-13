@@ -1,6 +1,8 @@
 const checkbox1 = document.querySelector("#textCheckbox");
 const checkbox2 = document.querySelector("#imageCheckbox");
 const checkbox3 = document.querySelector("#gifCheckbox");
+// making random image a global scope so that i can reuse it anytime everywhre
+var randomImage; 
 
 checkbox1.addEventListener("click", function() {
 if (this.checked) {
@@ -29,8 +31,12 @@ const closeImagePreview = document.querySelector('.close-image-preview');
 const Holder = document.querySelector('.holder');
 
 closeImagePreview.addEventListener('click',function(){
+
     Holder.style.display = 'none'
 });
+
+
+
 
 
 
@@ -126,8 +132,6 @@ function generateRandomQuotes(){
 }
 
 generateRandomQuotes();
-
-
 
 
 
@@ -386,15 +390,13 @@ function generateContent() {
             "src/images/valentine-wishes-for-boyfriend-1.jpg",
             "src/images/valentine-messages-for-boyfriend.jpg",
             "src/images/first-valentines-day-messages-for-boyfriend.jpg",
-            "src/images/4545454545",
             "src/images/Valentine-Card-Messages-for-Boyfriend.jpg",
-            "valentine-day-captions-for-boyfriend.jpg",
-            ""
+            "src/images/valentine-day-captions-for-boyfriend.jpg"
             ];
         
             for (var i = 0; i < images.length; i++) {
             var randomIndex = Math.floor(Math.random() * images.length);
-            var randomImage = images[randomIndex];
+            randomImage = images[randomIndex];
         }
 
     } else if (selectedGender === "GirlFriend") {
@@ -415,7 +417,7 @@ function generateContent() {
         
             for (var i = 0; i < images.length; i++) {
             var randomIndex = Math.floor(Math.random() * images.length);
-            var randomImage = images[randomIndex];
+            randomImage = images[randomIndex];
         }
 
     }else if (selectedGender === "Friend") {
@@ -432,7 +434,7 @@ function generateContent() {
         
             for (var i = 0; i < images.length; i++) {
             var randomIndex = Math.floor(Math.random() * images.length);
-            var randomImage = images[randomIndex];
+            randomImage = images[randomIndex];
         }
     }else if (selectedGender === "parents") {
         images = [
@@ -445,7 +447,7 @@ function generateContent() {
         
             for (var i = 0; i < images.length; i++) {
             var randomIndex = Math.floor(Math.random() * images.length);
-            var randomImage = images[randomIndex];
+            randomImage = images[randomIndex];
         }
     }else if (selectedGender === "Dad") {
         images = [
@@ -458,7 +460,7 @@ function generateContent() {
         
             for (var i = 0; i < images.length; i++) {
             var randomIndex = Math.floor(Math.random() * images.length);
-            var randomImage = images[randomIndex];
+            randomImage = images[randomIndex];
         }
     }else if (selectedGender === "Mum") {
         images = [
@@ -480,7 +482,7 @@ function generateContent() {
         
             for (var i = 0; i < images.length; i++) {
             var randomIndex = Math.floor(Math.random() * images.length);
-            var randomImage = images[randomIndex];
+            randomImage = images[randomIndex];
         }
     }else if (selectedGender === "Sister") {
         images = [
@@ -493,7 +495,7 @@ function generateContent() {
         
             for (var i = 0; i < images.length; i++) {
             var randomIndex = Math.floor(Math.random() * images.length);
-            var randomImage = images[randomIndex];
+            randomImage = images[randomIndex];
         }
     }else if (selectedGender === "Brother") {
         images = [
@@ -506,7 +508,7 @@ function generateContent() {
         
             for (var i = 0; i < images.length; i++) {
             var randomIndex = Math.floor(Math.random() * images.length);
-            var randomImage = images[randomIndex];
+            randomImage = images[randomIndex];
         }
     }else if (selectedGender === "Grand-pa") {
         images = [
@@ -519,7 +521,7 @@ function generateContent() {
         
             for (var i = 0; i < images.length; i++) {
             var randomIndex = Math.floor(Math.random() * images.length);
-            var randomImage = images[randomIndex];
+            randomImage = images[randomIndex];
         }
     }else if (selectedGender === "Grand-ma") {
         images = [
@@ -532,8 +534,10 @@ function generateContent() {
         
             for (var i = 0; i < images.length; i++) {
             var randomIndex = Math.floor(Math.random() * images.length);
-            var randomImage = images[randomIndex];
+            randomImage = images[randomIndex];
         }
+    
+      
     }else if (selectedGender === "Other-Fam-Members") {
         images = [
             "src/images/valentine-messages-for-family.jpg",
@@ -544,11 +548,15 @@ function generateContent() {
         
             for (var i = 0; i < images.length; i++) {
             var randomIndex = Math.floor(Math.random() * images.length);
-            var randomImage = images[randomIndex];
+            randomImage = images[randomIndex];
         }
     }
     content.innerHTML += `<img src="${randomImage}" />`;
     }
+
+
+
+
 // //////////////// gif selection/////////////////////
     if (gifCheckbox.checked) {
         var selectedGender = genderSelect.value;
@@ -681,3 +689,18 @@ const wallpapers = [
 
 body.style.backgroundImage = `url(${randomWallpaper})`;
 
+
+document.getElementById("download-button").addEventListener("click", function(){
+    // URL of the image to be downloaded
+    var imageURL =  randomImage;
+    console.log(randomImage)
+  
+    
+    // Create a link element
+    var downloadLink = document.createElement("a");
+    downloadLink.href = imageURL;
+    downloadLink.download = "image.jpg";
+    
+    // Dispatch a click event on the link
+    downloadLink.dispatchEvent(new MouseEvent("click"));
+  });

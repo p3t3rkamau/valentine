@@ -16,11 +16,11 @@
                 <div class="holder">
                     <button class="close-image-preview">Exit</button>
                     <big-image>
-                        <img src="/src/images/4545454545.jpg" alt="">
+                        <div id="content"></div>
                     </big-image>
                     <div class="other-options">
-                        <button>Create</button>
-                        <button>Download</button>
+                        <button id="createButton" onclick="generateContent()">NEXT</button>
+                        <button id="download-button">Download</button>
                         <button>Copy link</button>
                         <button>edit text</button>
                         <button>Share</button>
@@ -58,7 +58,7 @@
                 <div class="checkbox">
                     <table>
                       <tr>
-                        <td><input type="checkbox" name="checkbox" id="imageCheckbox">Image</td>
+                        <td><input type="checkbox" name="checkbox" id="imageCheckbox" checked>Image</td>
                         <td><input type="checkbox" name="checkbox" id="textCheckbox">Text</td>
                         <td><input type="checkbox" name="checkbox" id="gifCheckbox">Gif</td>
                       </tr>
@@ -68,7 +68,7 @@
                     <button id="createButton" onclick="generateContent()">CREATE</button>
                 </div>
                 </div>
-                    <div id="content"></div>
+                    
                     <p id="generatedText"></p>
                     <div id="generatedImages"></div>
                     <div id="generatedGifs"></div>
