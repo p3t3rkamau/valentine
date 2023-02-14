@@ -35,8 +35,8 @@ Create.addEventListener('click', function(){
       holder.children[i].style.display = "block";
       holder.style.background = "black";
     }
-    hideAll.style.display = 'block'
-    gallery.style.display = 'block'
+    hideAll.style.display = 'none'
+    gallery.style.display = 'none'
 });
 
 document.querySelector("#close").addEventListener("click", function() {
@@ -45,8 +45,8 @@ document.querySelector("#close").addEventListener("click", function() {
       holder.children[i].style.display = "none";
       holder.style.background = "none"
     }
-    hideAll.style.display = 'none'
-    gallery.style.display = 'none'
+    hideAll.style.display = 'block'
+    gallery.style.display = 'block'
 });
 
 
@@ -76,11 +76,6 @@ document.querySelector("#createButton").addEventListener("click", function() {
   this.innerHTML = "NEXT";
 });
 
-
-document.querySelector("img").onerror = function() {
-    console.log("Image failed to load");
-    document.querySelector("#image-error").style.display = "block";
-};
   
 
 
@@ -101,85 +96,6 @@ document.querySelector("#screenshot-button").addEventListener("click", function(
     });
 });
   
-
-
-  
- // var checkbox1 = document.getElementById("imageCheckbox");
-        // var checkbox2 = document.getElementById("textCheckbox");
-        // var checkbox3 = document.getElementById("gifCheckbox");
-        
-        // checkbox1.addEventListener("click", function() {
-        //   if (checkbox1.checked && checkbox2.checked && checkbox3.checked) {
-        //     alert("All checkboxes are checked!");
-        //   }
-        // });
-        
-        // checkbox2.addEventListener("click", function() {
-        //   if (checkbox1.checked && checkbox2.checked && checkbox3.checked) {
-        //     alert("All checkboxes are checked!");
-        //   }
-        // });
-        
-        // checkbox3.addEventListener("click", function() {
-        //   if (checkbox1.checked && checkbox2.checked && checkbox3.checked) {
-        //     alert("All checkboxes are checked!");
-        //   }
-        // });
-
-
-
-        // var createButton = document.getElementById("createButton");
-        // var textCheckbox = document.getElementById("textCheckbox");
-        // var imageCheckbox = document.getElementById("imageCheckbox");
-        // var gifCheckbox = document.getElementById("gifCheckbox");
-        // var generatedText = document.getElementById("generatedText");
-        // var generatedImages = document.getElementById("generatedImages");
-        // var generatedGifs = document.getElementById("generatedGifs");
-
-        // createButton.addEventListener("click", function() {
-        // if (textCheckbox.checked) {
-        //     var texts = [      "Lorem ipsum dolor sit amet",  
-        //         "Consectetur adipiscing elit",   
-        //            "Sed do eiusmod tempor incididunt",   
-        //               "Ut labore et dolore magna aliqua",  
-        //                   "Duis aute irure dolor in reprehenderit"    ];
-        
-        //     var randomIndex = Math.floor(Math.random() * texts.length);
-        //     var randomText = texts[randomIndex];
-        
-        //     generatedText.textContent = randomText;
-        // }
-        
-        // if (imageCheckbox.checked) {
-        //     var images = [      "https://via.placeholder.com/150x150?text=Image+1",  
-        //         "https://via.placeholder.com/150x150?text=Image+2",     
-        //          "https://via.placeholder.com/150x150?text=Image+3",   
-        //             "https://via.placeholder.com/150x150?text=Image+4",    
-        //               "https://via.placeholder.com/150x150?text=Image+5"    ];
-        
-        //     var randomImages = "";
-        //     for (var i = 0; i < images.length; i++) {
-        //     var randomIndex = Math.floor(Math.random() * images.length);
-        //     var randomImage = images[randomIndex];
-        //     randomImages += `<img src="${randomImage}" width="150" height="150">`;
-        //     }
-        
-        //     generatedImages.innerHTML = randomImages;
-            
-        // }
-        // if (gifCheckbox.checked) {
-        //     var gifs = [
-        //         "https://media.giphy.com/media/3o7abKstlPihoNQ2Qc/giphy.gif",
-        //         "https://media.giphy.com/media/xUPGcguWZHRC2HyBRS/giphy.gif",
-        //         "https://media.giphy.com/media/26AHvRUhT6pxzbuXG/giphy.gif"
-        //     ];
-        //     var randomGif = gifs[Math.floor(Math.random() * gifs.length)];
-        //     var gifElement = document.createElement("img");
-        //     gifElement.setAttribute("src", randomGif);
-        //     document.getElementById("generatedGifs").appendChild(gifElement);
-        //     }
-        // });
-
 function generateRandomQuotes(){
     var quote = [
         "Share and celebrate your love with the people who matter most this February 14 with a beautiful Happy Valentines Day Wishes for your family members! There are Valentines day wishes for son, for daughter, for sister, for father, for mother, and for parents.",  
